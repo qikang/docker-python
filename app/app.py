@@ -10,7 +10,9 @@ def index_page():
     env = os.environ
     env_str =  str([ "{}: {} </br>".format(i,env[i]) for i in env ])
 
-    re = "主机名: {}</br>环境变量: {}".format(hostname,env_str)
+    re = "主机名: {}</br> \
+应用版本：v1 <br>\
+环境变量: <br>{}".format(hostname,env_str)
 
     return re
 
